@@ -1,0 +1,25 @@
+## Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+*.log
+TestResults/
+## NuGet
+*.nupkg
+packages/
+## Rider / VS Code
+.idea/
+.vscode/
+## Secretos locales
+appsettings.Local.json
+*.pfx

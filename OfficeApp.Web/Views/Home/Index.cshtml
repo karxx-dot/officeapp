@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+<h1 class="mb-1">OfficeApp</h1>
+<p class="text-muted mb-4">Sistema de gestion de oficina con arquitectura en capas.</p>
+<div class="row g-3">
+  <div class="col-md-6 col-lg-3">
+    <div class="card module-card h-100"><div class="card-body">
+      <h5 class="card-title">HR</h5>
+      <p class="card-text">Recursos humanos: departamentos, puestos, empleados, asistencia y permisos.</p>
+      <p class="small text-muted">Departments, Positions, Employees, Attendances, LeaveRequests</p>
+      <a class="btn btn-sm btn-primary" asp-controller="Departments" asp-action="Index">Abrir modulo</a>
+    </div></div>
+  </div>
+  <div class="col-md-6 col-lg-3">
+    <div class="card module-card h-100"><div class="card-body">
+      <h5 class="card-title">Inventory</h5>
+      <p class="card-text">Inventario de oficina: categorias, proveedores, activos y asignaciones.</p>
+      <p class="small text-muted">Categories, Suppliers, Assets, AssetAssignments</p>
+      <a class="btn btn-sm btn-primary" asp-controller="Categories" asp-action="Index">Abrir modulo</a>
+    </div></div>
+  </div>
+  <div class="col-md-6 col-lg-3">
+    <div class="card module-card h-100"><div class="card-body">
+      <h5 class="card-title">Operations</h5>
+      <p class="card-text">Operaciones diarias: salas, reservas, reuniones y tareas.</p>
+      <p class="small text-muted">Rooms, Reservations, Meetings, MeetingAttendees, TaskItems</p>
+      <a class="btn btn-sm btn-primary" asp-controller="Rooms" asp-action="Index">Abrir modulo</a>
+    </div></div>
+  </div>
+  <div class="col-md-6 col-lg-3">
+    <div class="card module-card h-100"><div class="card-body">
+      <h5 class="card-title">Documents</h5>
+      <p class="card-text">Gestion documental: tipos de documento y archivos.</p>
+      <p class="small text-muted">DocumentTypes, Documents</p>
+      <a class="btn btn-sm btn-primary" asp-controller="DocumentTypes" asp-action="Index">Abrir modulo</a>
+    </div></div>
+  </div>
+</div>

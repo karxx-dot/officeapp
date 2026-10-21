@@ -1,0 +1,26 @@
+@model IEnumerable<OfficeApp.DAL.Models.Inventory.Category>
+@{
+    ViewData["Title"] = "Categories";
+}
+<h2 class="mb-3">Categories <small class="text-muted fs-6">(Inventory)</small></h2>
+<div class="table-responsive">
+  <table class="table table-striped table-hover bg-white">
+    <thead class="table-dark">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+      <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        <td>@item.Description</td>
+      </tr>
+}
+    </tbody>
+  </table>
+</div>

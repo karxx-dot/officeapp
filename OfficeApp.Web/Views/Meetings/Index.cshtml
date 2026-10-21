@@ -1,0 +1,34 @@
+@model IEnumerable<OfficeApp.DAL.Models.Operations.Meeting>
+@{
+    ViewData["Title"] = "Meetings";
+}
+<h2 class="mb-3">Meetings <small class="text-muted fs-6">(Operations)</small></h2>
+<div class="table-responsive">
+  <table class="table table-striped table-hover bg-white">
+    <thead class="table-dark">
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>ScheduledAt</th>
+        <th>DurationMinutes</th>
+        <th>RoomId</th>
+        <th>OrganizerId</th>
+      </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+      <tr>
+        <td>@item.Id</td>
+        <td>@item.Title</td>
+        <td>@item.Description</td>
+        <td>@item.ScheduledAt.ToString("yyyy-MM-dd HH:mm")</td>
+        <td>@item.DurationMinutes</td>
+        <td>@item.RoomId</td>
+        <td>@item.OrganizerId</td>
+      </tr>
+}
+    </tbody>
+  </table>
+</div>

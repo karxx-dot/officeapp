@@ -1,0 +1,30 @@
+@model IEnumerable<OfficeApp.DAL.Models.HR.Position>
+@{
+    ViewData["Title"] = "Positions";
+}
+<h2 class="mb-3">Positions <small class="text-muted fs-6">(HR)</small></h2>
+<div class="table-responsive">
+  <table class="table table-striped table-hover bg-white">
+    <thead class="table-dark">
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>MinSalary</th>
+        <th>MaxSalary</th>
+      </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+      <tr>
+        <td>@item.Id</td>
+        <td>@item.Title</td>
+        <td>@item.Description</td>
+        <td>@item.MinSalary.ToString("N2")</td>
+        <td>@item.MaxSalary.ToString("N2")</td>
+      </tr>
+}
+    </tbody>
+  </table>
+</div>

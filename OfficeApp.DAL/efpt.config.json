@@ -1,0 +1,45 @@
+{
+  "ContextClassName": "OfficeDbContext",
+  "ContextNamespace": null,
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": true,
+  "IncludeConnectionString": false,
+  "ModelNamespace": null,
+  "OutputContextPath": "Data",
+  "OutputPath": "Models",
+  "PreserveCasingWithRegex": true,
+  "ProjectRootNamespace": "OfficeApp.DAL",
+  "Schemas": [
+    {
+      "Name": "HR"
+    },
+    {
+      "Name": "Inventory"
+    },
+    {
+      "Name": "Operations"
+    },
+    {
+      "Name": "Documents"
+    }
+  ],
+  "SelectedToBeGenerated": 0,
+  "Tables": [],
+  "UiHint": "OfficeDb",
+  "UncountableWords": null,
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": false,
+  "UseDateOnlyTimeOnly": false,
+  "UseDbContextSplitting": false,
+  "UseFluentApiOnly": false,
+  "UseHandleBars": false,
+  "UseInflector": true,
+  "UseLegacyPluralizer": false,
+  "UseNoDefaultConstructor": false,
+  "UseNoNavigations": false,
+  "UseNullableReferences": true,
+  "UseSchemaFolders": true,
+  "UseSchemaNamespaces": true,
+  "UseSpatial": false,
+  "UseT4": false
+}
